@@ -93,7 +93,7 @@ table(all_trips$member_casual)
 
 all_trips$date<-as.Date(all_trips$started_at)
 all_trips$month<-format(as.Date(all_trips$date),"%m")
-all_trips$day<-format(as.Date(all_trips$date),"$d")
+all_trips$day<-format(as.Date(all_trips$date),"%d")
 all_trips$year<-format(as.Date(all_trips$date),"%Y")
 all_trips$day_of_week<-format(as.Date(all_trips$date),"%A")
 
